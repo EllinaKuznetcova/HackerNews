@@ -1,26 +1,127 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="kBM-vg-dw0">
+            <objects>
+                <navigationController storyboardIdentifier="Main" id="ZjH-mp-ano" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="URJ-K6-b9x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.9882352941176471" green="0.40000000000000002" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9ZU-ds-Duz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0x-cz-qHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-737" y="123"/>
+        </scene>
+        <!--News-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NewsListViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cl1-HH-0JH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newsItemCell" rowHeight="110" id="dSG-tA-xVQ" customClass="NewsListCell" customModule="HackerNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dSG-tA-xVQ" id="Moa-ru-CUi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Git catastrophe cleaned up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cD3-Cf-0hx">
+                                                    <rect key="frame" x="16" y="17" width="318" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42p-zP-GQl">
+                                                    <rect key="frame" x="16" y="52" width="39.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="er7-G2-Ekk">
+                                                    <rect key="frame" x="16" y="73.5" width="39.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discrlosure_indicator_orange" translatesAutoresizingMaskIntoConstraints="NO" id="DIr-5l-n3M">
+                                                    <rect key="frame" x="342" y="37.5" width="18" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="18" id="4kw-wK-n29"/>
+                                                        <constraint firstAttribute="height" constant="34" id="Wxp-w6-r4m"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DIr-5l-n3M" firstAttribute="centerY" secondItem="Moa-ru-CUi" secondAttribute="centerY" id="7co-Ba-JAZ"/>
+                                                <constraint firstItem="42p-zP-GQl" firstAttribute="leading" secondItem="cD3-Cf-0hx" secondAttribute="leading" id="IOe-Gk-NrE"/>
+                                                <constraint firstAttribute="trailing" secondItem="DIr-5l-n3M" secondAttribute="trailing" constant="15" id="JyE-pa-bTd"/>
+                                                <constraint firstItem="cD3-Cf-0hx" firstAttribute="leading" secondItem="Moa-ru-CUi" secondAttribute="leading" constant="16" id="WQg-K8-anM"/>
+                                                <constraint firstItem="DIr-5l-n3M" firstAttribute="leading" secondItem="cD3-Cf-0hx" secondAttribute="trailing" constant="8" id="bvD-tV-l7s"/>
+                                                <constraint firstItem="er7-G2-Ekk" firstAttribute="top" secondItem="42p-zP-GQl" secondAttribute="bottom" constant="2" id="hK9-VN-jBp"/>
+                                                <constraint firstItem="er7-G2-Ekk" firstAttribute="leading" secondItem="cD3-Cf-0hx" secondAttribute="leading" id="lT3-U3-PSP"/>
+                                                <constraint firstItem="42p-zP-GQl" firstAttribute="top" secondItem="cD3-Cf-0hx" secondAttribute="bottom" constant="11" id="uZ3-y0-nP1"/>
+                                                <constraint firstItem="cD3-Cf-0hx" firstAttribute="top" secondItem="Moa-ru-CUi" secondAttribute="top" constant="17" id="wnc-8h-GHT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentsLabel" destination="er7-G2-Ekk" id="AI7-S5-lqQ"/>
+                                            <outlet property="descriptionLabel" destination="42p-zP-GQl" id="va2-N4-wZ3"/>
+                                            <outlet property="titleLabel" destination="cD3-Cf-0hx" id="RGj-OW-LEC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="dBE-ew-pBi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fqQ-ky-YBB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Cl1-HH-0JH" secondAttribute="trailing" id="4q5-vF-f1H"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cl1-HH-0JH" secondAttribute="bottom" id="NV5-r0-Fme"/>
+                            <constraint firstItem="Cl1-HH-0JH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Vow-OV-Ntj"/>
+                            <constraint firstItem="Cl1-HH-0JH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xnt-mv-1Og"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="News" id="qYl-kM-jrS">
+                        <barButtonItem key="backBarButtonItem" title=" " id="NPR-OL-9ei"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Cl1-HH-0JH" id="eyc-Os-SKN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="122.78860569715144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="discrlosure_indicator_orange" width="18" height="34"/>
+    </resources>
 </document>
