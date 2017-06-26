@@ -114,7 +114,7 @@
 			children = (
 				E7707C471E23EAEB0010F6EB /* Routes.swift */,
 			);
-			name = Routes;
+			path = Routes;
 			sourceTree = "<group>";
 		};
 		E7AA856E1E3214F800AD851E /* Reducers */ = {
@@ -123,16 +123,16 @@
 				E7707C451E23EA1D0010F6EB /* AppReducer.swift */,
 				E7AA857B1E323D0500AD851E /* ArticlesReducer.swift */,
 			);
-			name = Reducers;
+			path = Reducers;
 			sourceTree = "<group>";
 		};
 		E7AA856F1E32150A00AD851E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E7C721FF1E1FCDED00D5B84A /* NewsListViewController.swift */,
 				E770A0DB1E377ED500BEC9D0 /* NewsListCell.swift */,
+				E7C721FF1E1FCDED00D5B84A /* NewsListViewController.swift */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		E7AA85701E32151F00AD851E /* Storyboards */ = {
@@ -141,7 +141,7 @@
 				E7C722061E1FCDED00D5B84A /* LaunchScreen.storyboard */,
 				E7C722011E1FCDED00D5B84A /* Main.storyboard */,
 			);
-			name = Storyboards;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		E7AA85711E32153600AD851E /* State */ = {
@@ -149,7 +149,7 @@
 			children = (
 				E7707C361E23BEE80010F6EB /* AppState.swift */,
 			);
-			name = State;
+			path = State;
 			sourceTree = "<group>";
 		};
 		E7AA85721E3216AA00AD851E /* Models */ = {
@@ -158,17 +158,16 @@
 				E7AA85731E3216ED00AD851E /* Article.swift */,
 				E7AA85751E3217EA00AD851E /* Comment.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E7AA85771E3223E000AD851E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				E7AA85851E3245F100AD851E /* Errors */,
-				E7AA85781E32240700AD851E /* NetworkRouter.swift */,
 				E7AA85801E32441400AD851E /* APIRequests.swift */,
+				E7AA85781E32240700AD851E /* NetworkRouter.swift */,
 			);
-			name = Networking;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		E7AA857D1E323D7B00AD851E /* Actions */ = {
@@ -176,7 +175,7 @@
 			children = (
 				E7AA857E1E323EDB00AD851E /* ArticlesAction.swift */,
 			);
-			name = Actions;
+			path = Actions;
 			sourceTree = "<group>";
 		};
 		E7AA85821E32452800AD851E /* Helpers */ = {
@@ -184,24 +183,17 @@
 			children = (
 				E7AA85831E32453A00AD851E /* AlamofireHelpers.swift */,
 			);
-			name = Helpers;
-			sourceTree = "<group>";
-		};
-		E7AA85851E3245F100AD851E /* Errors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Errors;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		E7C721F11E1FCDED00D5B84A = {
 			isa = PBXGroup;
 			children = (
+				A90C873CE30C76D725B55BFC /* Frameworks */,
 				E7C721FC1E1FCDED00D5B84A /* HackerNews */,
 				E7C722111E1FCDED00D5B84A /* HackerNewsTests */,
-				E7C721FB1E1FCDED00D5B84A /* Products */,
 				794236476C2C667857441534 /* Pods */,
-				A90C873CE30C76D725B55BFC /* Frameworks */,
+				E7C721FB1E1FCDED00D5B84A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,19 +209,19 @@
 		E7C721FC1E1FCDED00D5B84A /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
-				E7C721FD1E1FCDED00D5B84A /* AppDelegate.swift */,
-				E7AA85701E32151F00AD851E /* Storyboards */,
+				E7AA857D1E323D7B00AD851E /* Actions */,
 				E7AA856F1E32150A00AD851E /* Controller */,
+				E7AA85821E32452800AD851E /* Helpers */,
+				E7AA85721E3216AA00AD851E /* Models */,
+				E7AA85771E3223E000AD851E /* Networking */,
 				E7AA856E1E3214F800AD851E /* Reducers */,
 				E791BF841E3212AF0078B1E7 /* Routes */,
 				E7AA85711E32153600AD851E /* State */,
-				E7AA857D1E323D7B00AD851E /* Actions */,
-				E7AA85721E3216AA00AD851E /* Models */,
-				E7AA85771E3223E000AD851E /* Networking */,
+				E7AA85701E32151F00AD851E /* Storyboards */,
+				E7C721FD1E1FCDED00D5B84A /* AppDelegate.swift */,
 				E7C722041E1FCDED00D5B84A /* Assets.xcassets */,
-				E7AA85821E32452800AD851E /* Helpers */,
-				E7C722091E1FCDED00D5B84A /* Info.plist */,
 				E7AA857A1E32287F00AD851E /* BridgeHeader.h */,
+				E7C722091E1FCDED00D5B84A /* Info.plist */,
 			);
 			path = HackerNews;
 			sourceTree = "<group>";
@@ -488,6 +480,7 @@
 				E7C722021E1FCDED00D5B84A /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		E7C722061E1FCDED00D5B84A /* LaunchScreen.storyboard */ = {
@@ -496,6 +489,7 @@
 				E7C722071E1FCDED00D5B84A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
