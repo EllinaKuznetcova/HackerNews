@@ -1,9 +1,9 @@
 PODS:
-  - Alamofire (4.2.0)
-  - ObjectMapper (2.2.2)
-  - ReSwift (2.1.0)
-  - ReSwiftRouter (0.4.0):
-    - ReSwift (~> 2.1)
+  - Alamofire (4.5.0)
+  - ObjectMapper (2.2.7)
+  - ReSwift (3.0.0)
+  - ReSwiftRouter (0.5.1):
+    - ReSwift (~> 3.0.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -12,11 +12,11 @@ DEPENDENCIES:
   - ReSwiftRouter
 
 SPEC CHECKSUMS:
-  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
-  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
-  ReSwift: c13b76cb963c5ab2a137c9c6e74823cef4b81588
-  ReSwiftRouter: de452879035ea88ed51bb0bc3a2b7bd55365ab81
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
+  ReSwift: f0255f4b4f2dacd12c5d97d34d13fc5dad6d6371
+  ReSwiftRouter: c620138bf94b57c068f789d51c0bd23efc42bf68
 
 PODFILE CHECKSUM: cfad1f13973e8a1bf7ba7164a0262324fd62e1f6
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0
