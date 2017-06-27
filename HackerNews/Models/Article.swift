@@ -17,6 +17,7 @@ class Article {
     var originalPost: URL?
     var score: Int = 0
     
+    var commentsId: [Int] = []
     var comments: [Comment] = []
     
     init() {}
@@ -32,6 +33,7 @@ extension Article: Mappable {
         self.title <- map["title"]
         self.author <- map["by"]
         self.score <- map["score"]
+        self.commentsId <- map["kids"]
         
         if  let timeInterval = map.JSON["time"] as? Double {
             self.publishedAt = Date(timeIntervalSince1970: timeInterval)
