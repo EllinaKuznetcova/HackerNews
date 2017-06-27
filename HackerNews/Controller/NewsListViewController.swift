@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DateToolsSwift
 
 class NewsListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -36,7 +37,7 @@ extension NewsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "newsItemCell") as! NewsListCell
         let article = self.articles[indexPath.row]
-        cell.updateData(title: article.title, description: "\(article.score) points by \(article.author)", comments: "\(article.comments.count) comments")
+        cell.updateData(title: article.title, description: "\(article.score) points by \(article.author) \(article.publishedAt.timeAgoSinceNow)", comments: "\(article.comments.count) comments")
         return cell
     }
 }

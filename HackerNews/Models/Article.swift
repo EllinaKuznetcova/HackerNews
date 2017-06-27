@@ -13,7 +13,7 @@ class Article {
     var id: Int = 0
     var title: String = ""
     var author: String = ""
-    var publishAt: Date = Date()
+    var publishedAt: Date = Date()
     var originalPost: URL?
     var score: Int = 0
     
@@ -34,7 +34,7 @@ extension Article: Mappable {
         self.score <- map["score"]
         
         if  let timeInterval = map.JSON["time"] as? Double {
-            self.publishAt = Date(timeIntervalSince1970: timeInterval)
+            self.publishedAt = Date(timeIntervalSince1970: timeInterval)
         }
         
         if let urlString = map.JSON["url"] as? String {

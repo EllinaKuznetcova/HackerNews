@@ -16,6 +16,9 @@ target 'HackerNews' do
   
   #mapping
   pod 'ObjectMapper'
+  
+  #helpers
+  pod 'DateToolsSwift'
 
   target 'HackerNewsTests' do
     inherit! :search_paths

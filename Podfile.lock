@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.5.0)
+  - DateToolsSwift (2.0.3)
   - ObjectMapper (2.2.7)
   - ReSwift (3.0.0)
   - ReSwiftRouter (0.5.1):
@@ -7,16 +8,18 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - DateToolsSwift
   - ObjectMapper
   - ReSwift
   - ReSwiftRouter
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  DateToolsSwift: bf69bf9056d9e53c5c03f06e51f219b9b8b02f9e
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
   ReSwift: f0255f4b4f2dacd12c5d97d34d13fc5dad6d6371
   ReSwiftRouter: c620138bf94b57c068f789d51c0bd23efc42bf68
 
-PODFILE CHECKSUM: cfad1f13973e8a1bf7ba7164a0262324fd62e1f6
+PODFILE CHECKSUM: 86d8fcf2d42ef19fc563b83720f1ad2a4a5f2f8d
 
 COCOAPODS: 1.2.0
